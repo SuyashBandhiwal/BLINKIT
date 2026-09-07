@@ -30,13 +30,13 @@ app.use(express.json())
 
 // Routes
 // authRoutes file ke saare routes ko /api/auth ke andar chala do
-app.use('/api/auth', authRoutes)
+app.use('/auth', authRoutes)
 
-app.use('/api/products', productRoutes)
+app.use('/products', productRoutes)
 
-app.use('/api/payment', paymentRoutes)
+app.use('/payment', paymentRoutes)
 
-app.use('/api/orders', orderRoutes)
+app.use('/orders', orderRoutes)
 
 // MongoDB Connection
 // MongoDB Atlas se connection banata hai
